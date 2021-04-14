@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Liu_Jiaxu_GOT BUILD</title>
+
+    <link href="css/meyerReset.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/GOT_master.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+
+<body>
+    <main>
+
+        <section id="imageContainer">
+            <div id="houseImages">
+                <!-- add in all of the images to make a scrolling "banner" -->
+                <img src="images/stark.jpg" />
+                <img src="images/baratheon.jpg" />
+                <img src="images/lannister.jpg" />
+                <img src="images/tully.jpg" />
+                <img src="images/greyjoy.jpg" />
+                <img src="images/arryn.jpg" />
+                <img src="images/targeryen.jpg" />
+                <img src="images/tyrell.jpg" />
+                <img src="images/frey.jpg" />
+            </div>
+        </section>
+
+        <nav id="bottomNav">
+            <ul id="navList">
+                <!-- custom data attribute, allowing to pass custom data https://developer.mozilla.org/en/docs/Web/API/HTMLElement/dataset -->
+                <li>
+                    <div class="sigilContainer stark" data-offset="0"></div>
+                </li>
+                <li>
+                    <div class="sigilContainer baratheon" data-offset="1"></div>
+                </li>
+                <li>
+                    <div class="sigilContainer lannister" data-offset="2"></div>
+                </li>
+                <li>
+                    <div class="sigilContainer tully" data-offset="3"></div>
+                </li>
+                <li>
+                    <div class="sigilContainer greyjoy" data-offset="4"></div>
+                </li>
+                <li>
+                    <div class="sigilContainer arryn" data-offset="5"></div>
+                </li>
+                <li>
+                    <div class="sigilContainer targeryen" data-offset="6"></div>
+                </li>
+                <li>
+                    <div class="sigilContainer tyrell" data-offset="7"></div>
+                </li>
+                <li>
+                    <div class="sigilContainer frey" data-offset="8"></div>
+                </li>
+            </ul>
+        </nav>
+
+        <h1 id="houseName">Please click your house</h1><!-- replace this with the house name -->
+
+        <p class="house-info"></p><!-- replace this with house details (github gist) -->
+    </main>
+    <section class="lightBox">
+        <video class="lightBoxVideo" src="video/House-Stark.mp4" controls></video>
+        <span class="lightBoxClose">X</span>
+        <button class="button">Pause</button>
+        <button class="button">Replay</button>
+        <input type="range" value="100" min="1" max="100" class="volume">
+        <button class="button">Mute</button>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
